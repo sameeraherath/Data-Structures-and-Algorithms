@@ -45,6 +45,7 @@ public class ArrayOperations {
         return max; 
     }
 
+    //Method to calculate sum of the array
     public static int calculateSum(int[] array) {
 
     int sum = 0;
