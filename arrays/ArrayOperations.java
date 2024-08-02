@@ -15,6 +15,10 @@ public class ArrayOperations {
         //calculate sum of the array
         System.out.println("Sum : " + calculateSum(numbers));
 
+        //Find the minimum value in the array
+        System.out.println("Minimum Value: " + findMinValue(numbers));
+        
+
 
     }
 
@@ -56,6 +60,21 @@ public class ArrayOperations {
 
     return sum;
 
+  }
+
+  //Method to find the minimum value in the array
+  public static int findMinValue(int[] array) {
+      
+       int min = array[0];
+       for (int value: array) {
+
+        if (value < min) {
+
+            min = value;
+        }    
+    }
+    
+    return min;
   }
 
 }
